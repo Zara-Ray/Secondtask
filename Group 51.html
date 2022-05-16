@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/adba9104c3.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="Group 51.css" />
+    <script defer src="Group 51.js"></script>
+    <title>Sign Up Form</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="nav-div">
+        <img src="./image/Random logo.png" alt="Random Logo" class="logo" />
+
+        <img
+          src="./image/icon-hamburger.svg"
+          alt="hambuger"
+          class="hamburger"
+        />
+      </div>
+
+      <nav class="desktop-nav">
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Events</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">Support</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <form action="" class="form">
+      <h1 class="heading">Create Account</h1>
+      <p class="subheading">It is free and takes less than 30 seconds</p>
+
+      <div class="input--container">
+        <i class="fa-regular fa-user icon"></i>
+        <input
+          type="text"
+          name=""
+          placeholder="Username"
+          onkeyup="validateName()"
+          class="nameField"
+        />
+        <span class="nameError"></span>
+      </div>
+
+      <div class="input--container">
+        <i class="fa-solid fa-paper-plane icon"></i>
+        <input
+          type="email"
+          name=""
+          placeholder="Email Address"
+          onkeyup="validateEmail()"
+          class="emailField"
+        />
+        <span class="emailError"></span>
+      </div>
+
+      <div class="input--container">
+        <i class="fa-solid fa-phone icon"></i>
+        <input
+          type="tel"
+          name=""
+          placeholder="Phone Number"
+          onkeyup="validatePhone()"
+          class="phoneField"
+        />
+        <span class="phoneError"></span>
+      </div>
+
+      <div class="input--container">
+        <i class="fa-solid fa-lock icon"></i>
+        <input
+          type="password"
+          name=""
+          placeholder="Password"
+          onkeyup="validatePassword()"
+          class="password"
+        />
+        <img src="./image/eye-solid.svg" alt="eye" class="password--eye" />
+        <span class="passwordError"></span>
+      </div>
+
+      <div class="input--container">
+        <i class="fa-solid fa-lock icon"></i>
+        <input
+          type="password"
+          name=""
+          placeholder="Confirm Password"
+          class="cPField"
+          onkeyup="validateCP()"
+        />
+        <span class="confirmPasswordError"></span>
+      </div>
+
+      <div class="input--container">
+        <i class="fa-solid fa-person-half-dress icon"></i>
+        <input
+          name=""
+          list="Gender"
+          placeholder="Gender"
+          class="genderField"
+          onkeyup="validateGender()"
+        />
+        <datalist id="Gender">
+          <option>Male</option>
+          <option>Female</option>
+          <option>Prefer not to say</option>
+        </datalist>
+        <span class="genderError"></span>
+      </div>
+
+      <div>
+        <button class="btn">Sign Up</button>
+        <span class="btnError"></span>
+      </div>
+
+      <p class="footer-text">
+        By clicking on the sign up button, you agree to our
+        <a href="#" class="footer-link">Terms & Conditions</a>, and
+        <a href="#" class="footer-link">Privacy Policy</a>
+      </p>
+    </form>
+  </body>
+</html>

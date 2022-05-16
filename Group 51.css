@@ -1,0 +1,187 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  font-size: 1rem;
+  background-color: lightgrey;
+  height: 100%;
+}
+
+h1,
+p {
+  text-align: center;
+}
+
+header {
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  border-radius: 50%;
+  height: 5rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav li {
+  margin-left: 2rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: green;
+  font-size: 1.25rem;
+}
+
+nav a:hover {
+  border-bottom: 2px solid #fff;
+}
+
+.hamburger {
+  display: none;
+  align-self: center;
+}
+
+.form {
+  background-color: #fff;
+  padding: 2rem;
+  width: 60%;
+  margin: 2rem auto;
+  margin-bottom: 5rem;
+}
+
+.heading {
+  font-size: 3rem;
+}
+
+.subheading {
+  margin-bottom: 2rem;
+  margin-top: 0.5rem;
+  font-size: 0.8rem;
+}
+
+.input--container {
+  width: 100%;
+  margin-top: 1.5rem;
+  border-bottom: 1px solid black;
+  padding-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+}
+
+input {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-size: inherit;
+  flex: 1;
+}
+
+button {
+  border: none;
+  outline: none;
+  background-color: green;
+  width: 100%;
+  color: white;
+  font-size: 1.25rem;
+  padding: 0.5rem 0;
+  margin-top: 1.5rem;
+  border-radius: 8px;
+}
+
+.icon {
+  margin-right: 1rem;
+}
+
+.password--eye {
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+.footer-text {
+  font-size: 0.8rem;
+  margin-top: 1.5rem;
+}
+
+.footer-link {
+  color: green;
+  text-decoration: none;
+}
+
+.passwordError {
+  margin-left: 1rem;
+}
+
+span {
+  color: red;
+  font-size: 12px;
+}
+
+span i {
+  color: green;
+}
+
+.nav-div {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.modal {
+  background-color: black;
+  display: flex;
+  gap: 5rem;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+.modal img {
+  align-self: center;
+}
+
+.modal ul {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.modal li {
+  margin: 0;
+}
+
+.modal a {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+@media only screen and (max-width: 700px) {
+  header {
+    align-items: flex-start;
+  }
+  .hamburger {
+    display: block;
+  }
+
+  nav ul {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .form {
+    width: 90%;
+    padding: 2rem 0.5rem;
+  }
+}
