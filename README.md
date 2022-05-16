@@ -1,8 +1,8 @@
-Second capstone project for Team 51 [HTML & CSS]
+**Second capstone project for Team 51 [HTML & CSS]**
 
-LIVE LINK: https://group-51-second-capstone.netlify.app/
+**LIVE LINK**: https://group-51-second-capstone.netlify.app/
 
-Memmbers
+Members
 
 Team Lead: Chizaram Ezugwu-(SH-IT-0107666) 
 Assistant Team Lead: Khadijah Abdulazeez-(SH-IT-0109525) 
